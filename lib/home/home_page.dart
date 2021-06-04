@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import '../newprod/new_produt_page.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -81,7 +82,12 @@ class _MyHomePageState extends State<MyHomePage>{
       floatingActionButton: FloatingActionButton(
         //onPressed: _incrementCounter,
         tooltip: 'Increment',
-        onPressed: () {  },
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => NewProduts()),
+          );
+        },
         child: Icon(Icons.add),
       )
       

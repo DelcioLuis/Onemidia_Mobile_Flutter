@@ -17,6 +17,7 @@ class NewProduts extends StatelessWidget {
     print(nome_produtos.text);
     var url = Uri.parse('http://localhost:3333/produtos');
     var data = await http.post(url, body: {'nome_produto': '${nome_produtos.text}', 'preco': '${precoss.text}', 'preco': '${precoss.text}', "imagem_url": "http://localhost:3333/files/1617568668194-1622836907062.png"});
+    
   }
   
   @override
